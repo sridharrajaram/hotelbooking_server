@@ -7,20 +7,17 @@ const customerSchema = new Schema(
     customerName: {
       type: String,
       required: true,
-      unique: true,
       trim: true,
       minlength: 3,
     },
     email: {
       type: String,
       required: true,
-      unique: true,
       trim: true,
     },
     phoneNumber: {
       type: Number,
       required: true,
-      unique: true,
       trim: true,
       minlength: 8,
       maxlength: 10,
@@ -28,7 +25,6 @@ const customerSchema = new Schema(
     govtidentityProof: {
       type: Number,
       required: true,
-      unique: true,
       minlength: 15,
     },
     rooms: [
